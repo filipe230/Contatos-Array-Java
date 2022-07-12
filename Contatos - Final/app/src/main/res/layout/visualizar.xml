@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/visuCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Visualizar Contato"
+            android:textAlignment="center"
+            android:textSize="45dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtCodigoVisu"
+                style="@style/text"
+                android:text="Codigo:" />
+
+            <EditText
+                android:id="@+id/edtCodigoVisu"
+                style="@style/edit"
+                android:hint="Digite o Codigo"
+                android:editable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtNomeVisu"
+                style="@style/text"
+                android:text="Nome:" />
+
+            <EditText
+                android:id="@+id/edtNomeVisu"
+                style="@style/edit"
+                android:hint="Digite o Nome" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtNumeroVisu"
+                style="@style/text"
+                android:text="Numero:" />
+
+            <EditText
+                android:id="@+id/edtNumeroVisu"
+                style="@style/edit"
+                android:hint="Digite o Numero" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtEmailVisu"
+                style="@style/text"
+                android:text="Email:" />
+
+            <EditText
+                android:id="@+id/edtEmailVisu"
+                style="@style/edit"
+                android:hint="Digite o email" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtEderecoVisu"
+                style="@style/text"
+                android:text="Endereco:" />
+
+            <EditText
+                android:id="@+id/edtEnderecoVisu"
+                style="@style/edit"
+                android:hint="Digite o Endereco" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtDataVisu"
+                style="@style/text"
+                android:text="Data de Nasc.:" />
+
+            <EditText
+                android:id="@+id/edtDataVisu"
+                style="@style/edit"
+                android:hint="Digite Dt Nasc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtnExcluirVisu"
+                style="@style/butao"
+                android:onClick="excluirCont"
+                android:text="Excluir" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtnAltVisu"
+                style="@style/butao"
+                android:onClick="altVisu"
+                android:text="Alterar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtnVoltarVisu"
+                style="@style/butao"
+                android:onClick="voltarVisu"
+                android:text="Voltar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

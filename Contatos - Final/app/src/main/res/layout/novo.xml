@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/novoCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Novo Contato"
+            android:textAlignment="center"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtNomeNovo"
+                style="@style/text"
+                android:text="Nome:" />
+
+            <EditText
+                android:id="@+id/edtNomeNovo"
+                style="@style/edit"
+                android:hint="Digite o Nome" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtNumeroNovo"
+                style="@style/text"
+                android:text="Numero:" />
+
+            <EditText
+                android:id="@+id/edtNumeroNovo"
+                style="@style/edit"
+                android:hint="Digite o Numero" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtEmailNovo"
+                style="@style/text"
+                android:text="Email:" />
+
+            <EditText
+                android:id="@+id/edtEmailNovo"
+                style="@style/edit"
+                android:hint="Digite o email" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtEderecoNovo"
+                style="@style/text"
+                android:text="Endereco:" />
+
+            <EditText
+                android:id="@+id/edtEnderecoNovo"
+                style="@style/edit"
+                android:hint="Digite o Endereco" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtDataNovo"
+                style="@style/text"
+                android:text="Data de Nasc.:" />
+
+            <EditText
+                android:id="@+id/edtDataNovo"
+                style="@style/edit"
+                android:hint="Digite Dt Nasc"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtnSalvarNovo"
+                style="@style/butao"
+                android:onClick="salvarNovo"
+                android:text="Salvar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtnCancelarNovo"
+                style="@style/butao"
+                android:onClick="cancelarNovo"
+                android:text="Cancelar" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtnExcluir"
+                style="@style/butao"
+                android:onClick="ExcluirCont"
+                android:text="Excluir" />
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtnMostrarNovo"
+                style="@style/butao"
+                android:onClick="mostrarNovo"
+                android:text="Mostrar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtMostrarNovo"
+                style="@style/text" />
+            <!--android:text="Mostrar..."-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
